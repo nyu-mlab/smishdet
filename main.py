@@ -27,7 +27,7 @@ async def create_item(message_list: Messages):
             url_list.append({"url": x})
     headers = {'Content-type': 'application/json'}
 
-    r = requests.post('https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyA6VIW8WO9G-ckyz2R1DuHaMpP6LjyCZEI',
+    r = requests.post('https://safebrowsing.googleapis.com/v4/threatMatches:find?key=<your API key>',
     json= {"client":
           {"clientId": "yourcompanyname",
            "clientVersion": "1.5.2" },
